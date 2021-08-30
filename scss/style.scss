@@ -1,0 +1,12 @@
+@import 'custom';
+
+// IMPORT THE COMPONENTS
+@import 'components/buttons';
+@import 'components/mixins';
+@import 'components/typography';
+
+// IMPORT THE SECTIONS
+@import 'sections/header';
+@import 'sections/hero';
+@import 'sections/main';
+@import 'sections/footer';

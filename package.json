@@ -1,0 +1,37 @@
+{
+  "name": "national-parks",
+  "version": "1.0.0",
+  "description": "National parks simple page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natgonzalezrosa/national-parks.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "css",
+    "html",
+    "apis"
+  ],
+  "author": "Natalia Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natgonzalezrosa/national-parks/issues"
+  },
+  "homepage": "https://github.com/natgonzalezrosa/national-parks#readme",
+  "devDependencies": {
+    "@popperjs/core": "^2.9.3",
+    "postcss": "^8.3.6",
+    "sass": "^1.38.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.3",
+    "bootstrap": "^5.1.0",
+    "postcss-cli": "^8.3.1"
+  }
+}
