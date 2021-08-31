@@ -33342,6 +33342,7 @@ textarea.form-control-lg {
   background: linear-gradient(to right, rgba(30, 108, 18, 0.95), rgba(205, 217, 119, 0.95));
   border: 0.55rem solid #fff;
   transition: all 0.2s ease-in-out;
+  box-shadow: 5px 5px #888888;
 }
 
 .btn-primary:hover {
@@ -100107,6 +100108,10 @@ textarea.form-control-lg {
   .main {
     font-size: 7rem;
   }
+}
+
+.card {
+  width: 100%;
 }
 
 .subheading {

@@ -17,7 +17,7 @@ fetch('https://developer.nps.gov/api/v1/parks?stateCode=CA&limit=12&api_key=nEPr
             cardsSection.innerHTML += `
 
                 <div class="col">
-                    <div class="card h-100" style="width: 25rem;">
+                    <div class="card h-100">
                         <img src="${data.data[i].images[0].url}" class="card-img-top" alt="National Park main image">
                         <div class="card-body">
                             <h5 class="card-title">${data.data[i].fullName}</h5>

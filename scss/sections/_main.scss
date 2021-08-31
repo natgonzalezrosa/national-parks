@@ -8,6 +8,14 @@
     }
 }
 
+.card {
+    width: 100%;
+
+    // @include media-breakpoint-up(lg){
+    //     width: 18rem;
+    // }
+}
+
 .subheading {
     margin-bottom: 3rem;
 }

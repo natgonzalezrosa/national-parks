@@ -5,6 +5,7 @@
     @include gradient;
     border: 0.55rem solid $white;
     transition: all .2s ease-in-out;
+    box-shadow: 5px 5px #888888;
 }
 
 .btn-primary:hover {
