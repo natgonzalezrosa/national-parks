@@ -100106,12 +100106,13 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .main {
-    font-size: 7rem;
+    margin-top: 7rem;
   }
 }
 
 .card {
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .subheading {
@@ -100119,7 +100120,12 @@ textarea.form-control-lg {
 }
 
 .card-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
+}
+@media (min-width: 992px) {
+  .card-text {
+    font-size: 1rem;
+  }
 }
 
 .card-img-top {

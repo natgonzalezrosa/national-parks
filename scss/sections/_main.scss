@@ -4,16 +4,13 @@
     margin-top: 5rem;
 
     @include media-breakpoint-up(lg){
-        font-size: 7rem;
+        margin-top: 7rem;
     }
 }
 
 .card {
     width: 100%;
-
-    // @include media-breakpoint-up(lg){
-    //     width: 18rem;
-    // }
+    margin-bottom: 3rem;
 }
 
 .subheading {
@@ -21,7 +18,11 @@
 }
 
 .card-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
+
+    @include media-breakpoint-up(lg){
+        font-size: 1rem;
+    }
 }
 
 .card-img-top {
