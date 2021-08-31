@@ -1,0 +1,17 @@
+@import "../custom";
+
+.main {
+    margin-top: 5rem;
+
+    @include media-breakpoint-up(lg){
+        font-size: 7rem;
+    }
+}
+
+.subheading {
+    margin-bottom: 3rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
