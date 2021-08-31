@@ -1,0 +1,12 @@
+@import '../custom';
+@import "../components/mixins";
+
+.btn-primary {
+    @include gradient;
+    border: 0.55rem solid $white;
+    transition: all .2s ease-in-out;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+}

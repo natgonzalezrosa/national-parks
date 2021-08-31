@@ -24,8 +24,9 @@ fetch('https://developer.nps.gov/api/v1/parks?stateCode=CA&limit=12&api_key=nEPr
                             <p class="card-text">${data.data[i].description}</p>
                             <p class="card-text"><strong>GPS coordinates</strong>: ${data.data[i].latitude} N ${data.data[i].longitude} W</p>
                             <p class="card-text"><strong>Activities</strong>: ${activitiesArray.map(function(activity){
-                                return ` ${activity.name}`})} </p>
-                            <button type="button" href="${data.data[i].url}" class="btn btn-primary" target="_new">Go to NPS page</button>
+                                return ` ${activity.name}`})}
+                            </p>
+                            <a href="${data.data[i].url}" class="btn btn-primary" target="_blank" role="button">Go to NPS page</a>
                         </div>
                      </div>
                 </div>
@@ -33,6 +34,3 @@ fetch('https://developer.nps.gov/api/v1/parks?stateCode=CA&limit=12&api_key=nEPr
         }
     })
     .catch(err => console.log(err));
-
-
-    // col-lg-4 col-md-6
