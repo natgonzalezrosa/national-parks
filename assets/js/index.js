@@ -23,6 +23,7 @@ fetch('https://developer.nps.gov/api/v1/parks?stateCode=CA&limit=12&api_key=nEPr
 
             let activitiesArray = data.data[i].activities.slice(0,3);
 
+
             cardsSection.innerHTML += `
 
                 <div class="col-lg-4 col-md-6">
