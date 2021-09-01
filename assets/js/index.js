@@ -1,6 +1,7 @@
-// MY CUSTOM JAVASCRIPT
+// GLOBAL VARIABLES
 const cardsSection = document.getElementById('cards-section');
 
+// FETCH DATA FROM THE NPS API
 fetch('https://developer.nps.gov/api/v1/parks?stateCode=CA&limit=12&api_key=nEPrc69f5PVslaxsp5uroi9c7jJMdAUTBt6SxGbA')
     .then(res => {
         if (!res.ok){
@@ -12,8 +13,11 @@ fetch('https://developer.nps.gov/api/v1/parks?stateCode=CA&limit=12&api_key=nEPr
 
         for (let i = 0; i < data.limit; i++){
 
+            // SLICING ARRAY OF ACTIVITIES TO ONLY GET FIRST THREE ACTIVITIES
             let activitiesArray = data.data[i].activities.slice(0,3);
 
+            // THE HTML AND CSS FOR EACH CARD
+            // USING MAP() METHOD ON THE ARRAY TO RETURN EACH ACTIVITY NAME
             cardsSection.innerHTML += `
 
                 <div class="col">
