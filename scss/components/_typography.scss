@@ -28,6 +28,13 @@ p {
     }
 }
 
+// FOOTER HEADING
+.footer-heading {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
 // GRADIENT BACKGROUND
 .gradient {
     background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));

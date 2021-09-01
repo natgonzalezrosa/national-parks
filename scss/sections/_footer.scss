@@ -1,0 +1,53 @@
+@import '../custom';
+@import "../components/mixins";
+
+.footer {
+    padding-top: 1rem;
+    background-color: $footer;
+}
+
+.footer-top {
+    @include gradient;
+    margin-top: 5rem;
+}
+
+.footer-copyright {
+    background-color: #071904;
+    text-align: center;
+}
+
+.footer-list {
+    display: block;
+    list-style-type: none;
+    position: relative;
+
+    li {
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
+.legal-links {
+    text-align: center;
+
+    @include media-breakpoint-up(lg){
+        text-align: left;
+    }
+}
+
+.social-links {
+    text-align: center;
+
+    @include media-breakpoint-up(lg){
+        text-align: right;
+    }
+}

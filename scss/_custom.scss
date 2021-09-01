@@ -2,6 +2,7 @@
 $green-dark:   #1e6c12;
 $green-light:   #74d680;
 $yellow:    #cdd977;
+$footer: #195b0f;
 
 // WHITE AND GRAY COLORS
 $white:    #fff;
@@ -16,8 +17,8 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 
-$primary:       $green-dark;
-$secondary:     $yellow;
+$primary: $green-dark;
+$secondary: $yellow;
 
 // IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
