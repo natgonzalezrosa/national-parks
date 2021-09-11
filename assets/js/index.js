@@ -16,6 +16,13 @@ fetch('https://developer.nps.gov/api/v1/parks?stateCode=CA&limit=12&api_key=nEPr
             // SLICING ARRAY OF ACTIVITIES TO ONLY GET FIRST THREE ACTIVITIES
             let activitiesArray = data.data[i].activities.slice(0,3);
 
+            const latitudeCoord = data.data[i].latitude
+            let newLatitude = parseFloat(latitudeCoord).toFixed(3)
+
+            const longitudeCoord = Math.abs(data.data[i].longitude)
+            let newLongitude = parseFloat(longitudeCoord).toFixed(3)
+
+
             // THE HTML AND CSS FOR EACH CARD
             // USING MAP() METHOD ON THE ARRAY TO RETURN EACH ACTIVITY NAME
             cardsSection.innerHTML += `
@@ -26,7 +33,7 @@ fetch('https://developer.nps.gov/api/v1/parks?stateCode=CA&limit=12&api_key=nEPr
                         <div class="card-body">
                             <h5 class="card-title">${data.data[i].fullName}</h5>
                             <p class="card-text">${data.data[i].description}</p>
-                            <p class="card-text"><strong>GPS coordinates</strong>: ${data.data[i].latitude} N ${data.data[i].longitude} W</p>
+                            <p class="card-text"><strong>GPS coordinates</strong>: ${newLatitude} N ${newLongitude} W</p>
                             <p class="card-text"><strong>Activities</strong>: ${activitiesArray.map(function(activity){
                                 return ` ${activity.name}`})}
                             </p>
